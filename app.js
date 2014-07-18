@@ -9,8 +9,6 @@
   var setRoutes = function (err, results) {
     var sitePages = _.compact(results);
     _.each(sitePages, function (page) {
-      console.log(page);
-      page = encodeURIComponent(page);
       if (page.file === "index") {
         _.extend(page, {
           tableOfContents: _.without(sitePages, _.findWhere(sitePages, {file: "index"}))
