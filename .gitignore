@@ -3,3 +3,4 @@
 node_modules
 public/stylesheets/*.css
 npm-debug.log
+.DS_STORE
